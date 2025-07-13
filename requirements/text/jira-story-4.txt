@@ -1,0 +1,19 @@
+Creating/updating user directories ignores state of secure secret storage
+Issue Summary
+When secure secret storage is disabled via the `atlassian.secret.service.state` system property on an instance where Secret Service was already migrated the `{ATL_SECURED}` placeholder will be used for protected directory attribute values when creating or updating the directory, even though the underlying values are not propagated to the secret storage. As a result it's not possible to connect to the directory.
+
+Steps to Reproduce
+Setup Jira 10.2.0 or newer
+Disable secure secret storage by setting the `atlassian.secret.service.state` system property to `disabled`
+Attempt to create a new external user directory or change password (to a valid password) on an existing external user directory
+Expected Results
+The directory is created/updated.
+
+Actual Results
+If the directory is being created then it will be created successfully, but with an incorrect password. If the directory is being edited, other changes will be stored successfully but the existing password will be replaced with the `{ATL_SECURED} placeholder.
+
+Logs will contain connection errors caused by invalid passwords and may additionally contain the following log, depending on instance configuration:
+
+[c.a.crowd.crypto.PrefixBasedSwitchableEncryptor] Password encrypted with unknown encryptor ATL_SECURED. Cannot decrypt password.  
+Workaround
+The relevant password attributes have to be updated manually through the database.

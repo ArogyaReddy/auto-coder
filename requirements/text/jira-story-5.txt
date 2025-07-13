@@ -1,0 +1,11 @@
+Datapipeline Export Feature for Specific Custom Fields
+
+
+Description
+Currently there is option to configure your export to exclude certain types of data using feature flags. See How to manage dark features in Jira Server and Data Center to learn how to use feature flags.
+
+Default value	Description
+data.pipeline.feature.jira.all.exportable.custom.fields.enabled
+Enabled	Specifies whether custom field data should be included in the export. Exporting custom field data may increase your export duration, depending on the amount of custom field data you have. 
+Change the .enabled suffix to .disabled to exclude custom field data from your export.
+However there is currently no option to export only certain custom fields. This feature flag aims to provide an option to export only certain custom fields during Datapipe line export.

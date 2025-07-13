@@ -1,0 +1,6 @@
+mobile apps
+Explore these user story examples for the specific needs and preferences of mobile app users.
+
+As a language learner, I want an offline mode in the language learning app, so I can continue learning without an internet connection.
+As a user of a news app, I want to be able to customize my news feed based on my interests, so that I can quickly find articles I want to read.
+As a user, I want to be able to easily sync my app data across multiple devices, so that I can access my information from anywhere.

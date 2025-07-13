@@ -1,0 +1,20 @@
+Pop-up/notification using zoom level viewing workflow
+
+Issue Summary
+One customer is asking for a way to disable pop-up messages/notifications when is using a custom zoom level in their browser everytime user is editing/viewing a workflow. 
+
+At the moment, there isn’t a way to turn off the pop-up message, “The workflow designer may not behave correctly at your current browser zoom level,” in Jira.
+
+I know this message is designed to help ensure the workflow designer works as expected, since some features might not function properly if the browser zoom isn’t set to 100%
+
+Steps to Reproduce
+When editing or even just viewing a workflow, the attached pop-up is constantly getting in the way when zoomed in/out in the browser.
+This is happening in Chrome (Chrome based browsers), Firefox is not sending the message everytime.
+Expected Results
+Suggestion to add a "Don't remind me again" button or something to stop seeing the pop-up everytime user zoom in/out in the browser.
+
+Actual Results
+“The workflow designer may not behave correctly at your current browser zoom level,” pop-up being showed everytime user zoom in/out using the browser.
+
+Workaround
+Avoid using the zoom in/out browser configuration. Or use a non Chrome based browser (Firefox).

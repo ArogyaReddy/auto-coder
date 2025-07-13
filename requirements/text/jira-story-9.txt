@@ -1,0 +1,3 @@
+iPhone users need access to a vertical view of the live feed when using the mobile app.
+Desktop users need a “view fullscreen” button in the lower right hand corner of the video player.
+Android users need to be linked to apple store.

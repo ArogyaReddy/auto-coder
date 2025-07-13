@@ -1,0 +1,8 @@
+Problem Statement
+As a security minded customer, I want to help ensure that users are not adding API keys, tokens, passwords or similar confidential information in our Jira Data Center Environment. 
+
+Summary:
+In Jira, users are generally free to submit any data in to their issues, comments, and fields. As a result, this could allow users to accidentally include data and create a possible security issue. 
+
+Suggestion:
+It would be great if we could implement a secret scanner in Jira natively so that the environment can scan for, and identify risks like this and allow administrators to take a corrective action

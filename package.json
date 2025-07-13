@@ -1,0 +1,50 @@
+{
+  "name": "auto-coder",
+  "version": "1.0.0",
+  "main": "cli/index.js",
+  "bin": {
+    "auto-coder": "./cli/index.js"
+  },
+  "scripts": {
+    "start": "node cli/index.js",
+    "interactive": "node cli/index.js interactive",
+    "test": "cucumber-js",
+    "test:generate": "node cli/index.js generate --input requirements/text/sample-login-requirements.md --type file",
+    "test:run": "npm run test",
+    "dev": "node cli/index.js interactive",
+    "interactive-cli": "node cli/interactive-cli.js",
+    "generate": "node cli/index.js generate --input requirements/text/sample-login-requirements.md --type file",
+    "generate:text": "node cli/index.js generate --input 'User can login to access dashboard' --type text --output ./generated",
+    "generate:url": "node cli/index.js generate --input 'https://httpbin.org/html' --type url --output ./generated",
+    "run-tests": "node cli/index.js run --path ./generated --format html",
+    "help": "node cli/index.js --help",
+    "demo": "echo '🚀 Demo: Generating from text...' && npm run generate:text && echo '✅ Demo completed! Check ./generated folder'",
+    "clean": "rm -rf ./generated ./test-outputs ./reports ./temp"
+  },
+  "keywords": ["test-automation", "bdd", "cucumber", "playwright", "requirements"],
+  "author": "",
+  "license": "ISC",
+  "description": "Dynamic test automation framework that reads, understands, and generates test artifacts from various input sources",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.40.0",
+    "axios": "^1.10.0",
+    "chai": "^5.2.1",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "fs-plus": "^3.1.1",
+    "inquirer": "^8.2.6",
+    "js-yaml": "^4.1.0",
+    "marked": "^9.1.6",
+    "node-fetch": "^3.3.2",
+    "ora": "^7.0.1",
+    "pdf-parse": "^1.1.1",
+    "require-dir": "^1.2.0",
+    "sharp": "^0.32.6",
+    "tesseract.js": "^4.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
+}

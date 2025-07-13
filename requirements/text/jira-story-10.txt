@@ -1,0 +1,4 @@
+login flow
+As a user, I want an option to stay logged in, so that I don’t have to enter my credentials every time.
+As a user, I want to be able to reset my password if I forget it, so that I can regain access to my account.
+As a user, I want to see an error message if I enter incorrect login details, so that I know when my login attempt has failed.

@@ -1,0 +1,4 @@
+registration flow for a website.
+As a user, I want to log in via my social media accounts, so that I can quickly access the platform without creating a new account.
+As a new user, I want to choose my own username and password during registration, so that I can personalize my login credentials.
+As a new user, I want to provide my basic information during registration, such as name and date of birth, so that I can personalize my profile.

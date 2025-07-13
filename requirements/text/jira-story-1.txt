@@ -1,0 +1,5 @@
+As per the Jira 9.13.0 release notes, the watcher field can only be used in create screens by enabling the dark feature com.atlassian.jira.initialwatchers.enabled.
+
+This feature is already gated behind admin control over the fields in a screen, so there is minimal risk at allowing for this field to be added to create screens by default. The documentation is currently limited to the 9.13 release notes, so many customers will not be aware of this flag before contacting support.
+
+We would like to enable this feature flag by default, instead of the current behavior of OFF.

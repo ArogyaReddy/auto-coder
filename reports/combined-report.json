@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "framework": "Auto-Coder",
+    "version": "1.0.0",
+    "timestamp": "2025-07-13",
+    "generator": "test-runner"
+  },
+  "summary": {
+    "cucumber": null,
+    "playwright": null
+  }
+}

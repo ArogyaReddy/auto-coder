@@ -1,0 +1,13 @@
+user registration for a website for e-commerce.
+
+As a user I want to register to the website so that I can purchase items.
+
+Acceptance criteria
+
+Should be able to provide my personal details (Name, address, email, phone number)
+
+Should be able to save my info so that I do not need to enter them again
+
+Should be able to enter international phone number
+
+Should be able to enter internationals address
