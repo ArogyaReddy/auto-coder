@@ -2,7 +2,7 @@ node_modules
 .DS_Store
 .env
 dist
-test-output
+test-outputs
 eng.traineddata
 eng.traineddata.*
 *.log
